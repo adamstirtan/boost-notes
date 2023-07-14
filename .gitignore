@@ -1,2 +1,5 @@
 src/**/bin/
 src/**/obj/
+src/.vs/
+
+.DS_STORE
