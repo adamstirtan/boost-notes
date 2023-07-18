@@ -1,5 +1,6 @@
 src/**/bin/
 src/**/obj/
 src/.vs/
+.vs/
 
 .DS_STORE
