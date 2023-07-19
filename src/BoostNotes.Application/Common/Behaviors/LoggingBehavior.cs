@@ -23,6 +23,8 @@ namespace BoostNotes.Application.Common.Behaviors
             _logger.LogInformation("Request: {@Request}",
                 requestName,
                 request);
+
+            await Task.FromResult(true);
         }
     }
 }
