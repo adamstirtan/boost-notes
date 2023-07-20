@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 namespace BoostNotes.Application.Common.Behaviors
 {
     internal class PerformanceBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+        where TRequest : notnull
     {
         private readonly ILogger<TRequest> _logger;
         private readonly Stopwatch _stopwatch;
@@ -17,6 +18,7 @@ namespace BoostNotes.Application.Common.Behaviors
             ILogger<TRequest> logger)
         {
             _logger = logger;
+            _stopwatch = new Stopwatch();
         }
 
         public async Task<TResponse> Handle(

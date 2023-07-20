@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 namespace BoostNotes.Application.Common.Behaviors
 {
     public class UnhandledExceptionBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+        where TRequest : notnull
     {
         private readonly ILogger<TRequest> _logger;
 

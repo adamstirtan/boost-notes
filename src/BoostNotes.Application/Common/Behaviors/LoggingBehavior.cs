@@ -8,6 +8,7 @@ using MediatR.Pipeline;
 namespace BoostNotes.Application.Common.Behaviors
 {
     public class LoggingBehavior<TRequest> : IRequestPreProcessor<TRequest>
+        where TRequest : notnull
     {
         private readonly ILogger _logger;
 
