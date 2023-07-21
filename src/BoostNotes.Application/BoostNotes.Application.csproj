@@ -14,9 +14,17 @@
   <ItemGroup>
     <None Remove="Common\" />
     <None Remove="Common\Behaviors\" />
+    <None Remove="Common\Exceptions\" />
+    <None Remove="Common\Interfaces\" />
+    <None Remove="DTO\" />
+    <None Remove="DTO\Email\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
     <Folder Include="Common\Behaviors\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Common\Interfaces\" />
+    <Folder Include="DTO\" />
+    <Folder Include="DTO\Email\" />
   </ItemGroup>
 </Project>
